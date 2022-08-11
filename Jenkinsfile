@@ -18,7 +18,7 @@ pipeline {
            stage('Build') {
    
          steps {
-           sh 'docker build -t 13cd9e044e53/asd1 .'
+           sh 'docker build -t 13cd9e044e53/asd2 .'
          }
        }
    
@@ -32,7 +32,7 @@ pipeline {
        stage('Push') {
    
          steps {
-           sh 'docker push 13cd9e044e53/asd1:latest'
+           sh 'docker push 13cd9e044e53/asd2:latest'
          }
        }
    
